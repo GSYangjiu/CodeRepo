@@ -1,5 +1,7 @@
 package collection.map;
 
+import java.util.Date;
+
 /**
  * Created by Yang on 2017/10/21 0021.
  */
@@ -21,6 +23,7 @@ public class Test {
         Car newCar2 = (Car)newHashMap.get("第一辆");
         System.out.println(newCar2.toString());
         System.out.println(newHashMap.toString());
+        System.out.println(new Date().toString());
     }
 }
 
