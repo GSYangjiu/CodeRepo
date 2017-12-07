@@ -1,4 +1,4 @@
-package designPatterns.singleton;
+package gof23.singleton;
 
 /**
  * Created by Yang on 2017/10/20 0020.
