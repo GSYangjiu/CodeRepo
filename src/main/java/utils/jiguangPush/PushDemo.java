@@ -27,8 +27,8 @@ public class PushDemo {
         PushPayload payload = PushPayload.newBuilder()
                 .setPlatform(Platform.all())
                 .setAudience(Audience.all())
-                .setNotification(Notification.alert("PushDemo Notification Test"))
-                .setMessage(Message.content("PushDemo Message Test"))
+                .setNotification(Notification.alert("PushDemo Notification Hotel"))
+                .setMessage(Message.content("PushDemo Message Hotel"))
                 .build();
 
         try {

@@ -1,11 +1,11 @@
-package gof23.factory.abstractFactory;
+package gof23.abstractFactory;
 
-import gof23.factory.abstractFactory.engine.Engine;
-import gof23.factory.abstractFactory.engine.LuxuryEngine;
-import gof23.factory.abstractFactory.seat.LuxurySeat;
-import gof23.factory.abstractFactory.seat.Seat;
-import gof23.factory.abstractFactory.tyre.LuxuryTyre;
-import gof23.factory.abstractFactory.tyre.Tyre;
+import gof23.abstractFactory.engine.Engine;
+import gof23.abstractFactory.engine.LuxuryEngine;
+import gof23.abstractFactory.seat.LuxurySeat;
+import gof23.abstractFactory.seat.Seat;
+import gof23.abstractFactory.tyre.LuxuryTyre;
+import gof23.abstractFactory.tyre.Tyre;
 
 /**
  * Created by Yang on 2017/12/7 0007.

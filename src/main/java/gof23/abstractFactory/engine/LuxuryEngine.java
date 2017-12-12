@@ -1,6 +1,4 @@
-package gof23.factory.abstractFactory.engine;
-
-import gof23.factory.abstractFactory.engine.Engine;
+package gof23.abstractFactory.engine;
 
 /**
  * Created by Yang on 2017/12/7 0007.
