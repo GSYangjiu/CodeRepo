@@ -1,8 +1,7 @@
-package Hanoi;
+package algorithm;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Collections;
 
 /**
  * Created by Yang on 2018/1/18 0018.

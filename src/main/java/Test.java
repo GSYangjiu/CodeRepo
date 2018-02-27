@@ -1,4 +1,4 @@
-import suanfa.BinarySearch;
+import algorithm.BinarySearch;
 
 import java.util.*;
 
