@@ -1,4 +1,4 @@
-package sort;
+package algorithm.sort;
 
 /**
  * Created by Yang on 2017/12/26 0026.
@@ -12,10 +12,10 @@ public class Test {
         }
 
         //冒泡排序
-        //BubbleSort.bubbleSort(sort);
+        //BubbleSort.bubbleSort(algorithm.sort);
 
         //快速排序
-        //QuickSort.quick(sort);
+        //QuickSort.quick(algorithm.sort);
 
         //选择排序
         SelectSort.selectSotr(sort);

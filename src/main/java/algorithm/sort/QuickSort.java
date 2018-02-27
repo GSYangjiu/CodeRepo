@@ -1,56 +1,54 @@
-package sort;
+package algorithm.sort;
+
+import algorithm.Swap;
 
 /**
  * Created by Yang on 2017/12/27 0027.
  */
 public class QuickSort {
-    private static int getMiddle(int[] numbers, int low, int high) {
-        int temp = numbers[low];
+    private static int getMiddle(int[] arr, int low, int high) {
+        int temp = arr[low];
         while (low < high) {
-            while (low < high && numbers[high] > temp) {
+            while (low < high && arr[high] > temp) {
                 high--;
             }
-            numbers[low] = numbers[high];
+            arr[low] = arr[high];
 
-            while (low < high && numbers[low] < temp) {
+            while (low < high && arr[low] < temp) {
                 low++;
             }
-            numbers[high] = numbers[low];
+            arr[high] = arr[low];
         }
-        numbers[low] = temp;
+        arr[low] = temp;
         return low;
     }
 
-    private static int getPartition(int[] array, int beg, int end) {
-        int first = array[beg];
+    private static void quickSort(int[] arr, int low, int high) {
+        if (low < high && arr.length > 0) {
+            int middle = getMiddle(arr, low, high);
+            quickSort(arr, low, middle - 1);
+            quickSort(arr, middle + 1, high);
+        }
+    }
+
+    private static int getPartition(int[] arr, int beg, int end) {
+        int first = arr[beg];
         int i = beg, j = end;
         while (i < j) {
-            while (array[beg] <= first && i < end) {
+            while (arr[beg] <= first && i < end) {
                 i++;
             }
-            while (array[end] > first && j >= beg) {
+            while (arr[end] > first && j >= beg) {
                 j--;
             }
             if (i < j) {
-                array[i] = array[i] ^ array[j];
-                array[j] = array[i] ^ array[j];
-                array[i] = array[i] ^ array[j];
+                Swap.swap(arr, i, j);
             }
         }
         if (j != beg) {
-            array[j] = array[beg] ^ array[j];
-            array[beg] = array[beg] ^ array[j];
-            array[j] = array[beg] ^ array[j];
+            Swap.swap(arr, j, beg);
         }
         return j;
-    }
-
-    private static void quickSort(int[] numbers, int low, int high) {
-        if (low < high && numbers.length > 0) {
-            int middle = getMiddle(numbers, low, high);
-            quickSort(numbers, low, middle - 1);
-            quickSort(numbers, middle + 1, high);
-        }
     }
 
     public static void quick(int[] numbers) {
