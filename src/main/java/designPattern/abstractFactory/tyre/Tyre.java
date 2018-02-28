@@ -1,4 +1,4 @@
-package gof23.abstractFactory.tyre;
+package designPattern.abstractFactory.tyre;
 
 /**
  * Created by Yang on 2017/12/7 0007.

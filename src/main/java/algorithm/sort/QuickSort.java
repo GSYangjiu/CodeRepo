@@ -47,13 +47,14 @@ public class QuickSort {
         }
         if (j != beg) {
             Swap.swap(arr, j, beg);
+            //测试
         }
         return j;
     }
 
-    public static void quick(int[] numbers) {
-        if (numbers.length > 0) {
-            quickSort(numbers, 0, numbers.length - 1);
+    public static void quick(int[] arr) {
+        if (arr.length > 0) {
+            quickSort(arr, 0, arr.length - 1);
         }
     }
 }

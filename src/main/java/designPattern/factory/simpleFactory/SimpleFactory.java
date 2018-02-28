@@ -1,8 +1,8 @@
-package gof23.factory.simpleFactory;
+package designPattern.factory.simpleFactory;
 
-import gof23.factory.Audi;
-import gof23.factory.Benz;
-import gof23.factory.Car;
+import designPattern.factory.Audi;
+import designPattern.factory.Benz;
+import designPattern.factory.Car;
 
 /**
  * Created by Yang on 2017/12/7 0007.

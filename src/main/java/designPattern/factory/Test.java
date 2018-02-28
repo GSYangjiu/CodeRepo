@@ -1,4 +1,4 @@
-package gof23.factory;
+package designPattern.factory;
 
 import java.util.ArrayList;
 import java.util.List;

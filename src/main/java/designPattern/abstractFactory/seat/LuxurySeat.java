@@ -1,4 +1,4 @@
-package gof23.abstractFactory.seat;
+package designPattern.abstractFactory.seat;
 
 /**
  * Created by Yang on 2017/12/7 0007.

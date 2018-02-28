@@ -1,4 +1,4 @@
-package gof23.adapter;
+package designPattern.adapter;
 
 /**
  * Created by Yang on 2017/12/12 0012.

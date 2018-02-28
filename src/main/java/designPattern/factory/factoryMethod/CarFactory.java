@@ -1,6 +1,6 @@
-package gof23.factory.factoryMethod;
+package designPattern.factory.factoryMethod;
 
-import gof23.factory.Car;
+import designPattern.factory.Car;
 
 /**
  * Created by Yang on 2017/12/7 0007.
