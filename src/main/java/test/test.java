@@ -8,11 +8,15 @@ import java.util.List;
  */
 public class test {
     public static void main(String[] args) {
-        List<List<String>> fatherList = new LinkedList<List<String>>();
-        List<String> sonList = new LinkedList<String>();
-        sonList.add("AAA");
-        fatherList.add(sonList);
-        sonList.add("BBB");
-        System.out.println(fatherList.toString());
+        A a = new B();
+        A b = new A();
+        b = (B) b;
+        b.getName();
+        a = (A) a;
+        a.getName();
     }
+}
+
+class P {
+    public String name;
 }

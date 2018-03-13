@@ -6,4 +6,5 @@ package designPattern.observer;
  * Time: 20:05
  */
 public interface Observer {
+    public void hearTelephone(String heardMess);
 }
