@@ -1,4 +1,4 @@
-package designPattern.observer;
+package designPattern.observer.demo;
 
 import java.io.File;
 import java.io.IOException;
