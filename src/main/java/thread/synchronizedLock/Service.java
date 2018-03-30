@@ -8,7 +8,7 @@ package thread.synchronizedLock;
  */
 public class Service {
     synchronized public void service1() {
-        System.out.println("service1");
+        System.out.println("service");
         service2();
     }
 
