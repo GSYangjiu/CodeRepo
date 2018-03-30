@@ -1,4 +1,4 @@
-package designPattern.ChainOfResponsibility;
+package designPattern.chainOfResponsibility;
 
 /**
  * Created by: Yang
