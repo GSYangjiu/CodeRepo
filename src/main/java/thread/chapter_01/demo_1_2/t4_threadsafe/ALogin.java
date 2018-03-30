@@ -1,4 +1,4 @@
-package thread.demo_1_2.t4_threadsafe;
+package thread.chapter_01.demo_1_2.t4_threadsafe;
 
 /**
  * Created by Marik on 2018/3/28 0028.

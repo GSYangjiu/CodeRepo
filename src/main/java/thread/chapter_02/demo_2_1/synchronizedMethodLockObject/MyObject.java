@@ -1,4 +1,4 @@
-package thread.demo_2_1.synchronizedMethodLockObject;
+package thread.chapter_02.demo_2_1.synchronizedMethodLockObject;
 
 /**
  * Created by Yang.

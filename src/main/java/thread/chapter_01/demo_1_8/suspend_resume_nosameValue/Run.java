@@ -1,4 +1,4 @@
-package thread.demo_1_8.suspend_resume_nosameValue;
+package thread.chapter_01.demo_1_8.suspend_resume_nosameValue;
 
 /**
  * Created by Yang.
