@@ -3,7 +3,7 @@ package designPattern.adapter;
 /**
  * Created by Yang on 2017/12/12 0012.
  */
-public class Test {
+public class Application {
     public static void main(String[] args) {
         DBSocketInterface dbSocket = new DBSocket();
         Hotel hotel = new Hotel(dbSocket);
