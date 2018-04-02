@@ -13,7 +13,7 @@ public class Application {
 
     public static void main(String[] args) {
         for (int i = 0; i < 20; i++) {
-            Cricle cricle = new Cricle(getRandomColor());
+            Cricle cricle = (Cricle) ShapeFactory.getShape(getRandomColor());
             cricle.setX(getRandomX());
             cricle.setY(getRandomY());
             cricle.setRadius(100);

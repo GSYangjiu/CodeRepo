@@ -1,4 +1,4 @@
-package designPattern.Facade;
+package designPattern.facade;
 
 /**
  * Created by: Yang
