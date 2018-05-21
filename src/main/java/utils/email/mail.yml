@@ -1,0 +1,6 @@
+mail:
+  smtpService: smtp.qq.com
+  smtpPort: 587
+  fromMailAddress: 960758921@qq.com
+  fromMailSmtpPwd: myihkkyvtxegbahg
+  nickname: Vincent
