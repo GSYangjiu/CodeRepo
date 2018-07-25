@@ -4,6 +4,20 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <list>
+                <bean class="spring.DatePropertyEditorRegistrar"></bean>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="userManger" class="spring.entity.UserManger">
+        <property name="dataValue">
+            <value>2018-07-25</value>
+        </property>
+    </bean>
+
     <bean id="yang" class="spring.entity.Student">
         <property name="id" value="1"/>
         <property name="name" value="杨浩环"/>

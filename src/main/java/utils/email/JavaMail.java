@@ -11,10 +11,10 @@ import java.util.Properties;
 public class JavaMail {
     public static void send(String subject, String content, String[] to) throws Exception {
         org.springframework.mail.javamail.JavaMailSenderImpl javaMailSender = new org.springframework.mail.javamail.JavaMailSenderImpl();
-        javaMailSender.setHost("smtpdm.aliyun.com");
+        javaMailSender.setHost("smtp.qq.com");
         javaMailSender.setPort(465);
-        javaMailSender.setUsername("yanzheng@www.mugvip.com");
-        javaMailSender.setPassword("MGvipyz123");
+        javaMailSender.setUsername("vincent@yangmiemie.info");
+        javaMailSender.setPassword("igaasdsrzuiijjec");
         javaMailSender.setDefaultEncoding("UTF-8");
 
         Properties properties = new Properties();
@@ -27,22 +27,10 @@ public class JavaMail {
         properties.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         javaMailSender.setJavaMailProperties(properties);
 
-//		JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
-//		javaMailSender.setHost("smtpdm.aliyun.com");
-//		javaMailSender.setUsername("yanzheng@www.mugvip.com");
-//		javaMailSender.setPassword("MGvipyz123");
-//		javaMailSender.setDefaultEncoding("UTF-8");
-//		javaMailSender.setPort(465);
-//		Properties javaMailProperties = new Properties();
-//		javaMailProperties.setProperty("mail.smtp.auth", "true");
-//		javaMailProperties.put("mail.smtp.starttls.enable", "true");
-//		javaMailProperties.setProperty("mail.smtp.timeout", "25000");
-//		javaMailSender.setJavaMailProperties(javaMailProperties);
-
         MimeMessage mailMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper messageHelper = new MimeMessageHelper(mailMessage);
         messageHelper.setTo(to);
-        messageHelper.setFrom("yanzheng@www.mugvip.com");
+        messageHelper.setFrom("vincent@yangmiemie.info");
         messageHelper.setSubject(subject);
         messageHelper.setText(content, true);
         javaMailSender.send(mailMessage);
@@ -50,12 +38,10 @@ public class JavaMail {
 
     public static void main(String[] args) throws Exception {
         try {
-            String[] to = new String[]{"sujun@mugvip.com"};
+            String[] to = new String[]{"vincent1094259423@163.com"};
 
-            String content = "尊敬的用户：您的校验码是175824，工作人员不会索取，请勿泄露。<br><br><br><img src='http://www.muguanglianyi.com/images/296167e7-befa-4ac7-9444-1d64fd157a24.jpeg'></img>";
-
-
-            send("木光邮件",content, to);
+            String content = "测试一下";
+            send("测试邮件", content, to);
 
         } catch (Exception e) {
             e.printStackTrace();

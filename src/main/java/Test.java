@@ -1,30 +1,30 @@
-import algorithm.BinarySearch;
-
-import java.util.*;
-
 /**
  * Created by Yang on 2017/10/25 0025.
  */
 public class Test {
-    public final int i = 1;
+    private static boolean stopRequested;
 
-    public static void main(String[] args) {
-        int[] arr = {1, 5};
-        BinarySearch.binarySearch(arr, 0);
-    }
 
-    static Random r = new Random();
-    static String ssource = "ABCDEFGHIJKLMNOOPQRSTUVWXYZ" + "abcdefghijklmnoopqrstuvwxyz";
+    public static void main(String[] args) throws InterruptedException {
+        //long totalMilliSeconds =  15282746498L;
+        long totalMilliSeconds =  System.currentTimeMillis();
+        long totalSeconds = totalMilliSeconds / 1000;
 
-    static char[] src = ssource.toCharArray();
+        //求出现在的秒
+        long currentSecond = totalSeconds % 60;
 
-    public static String ranString(int length) {
-        char[] buf = new char[length];
-        int rnd;
-        for (int i = 0; i < length; i++) {
-            rnd = Math.abs(r.nextInt()) % src.length;
-            buf[i] = src[rnd];
-        }
-        return new String(buf);
+        //求出现在的分
+        long totalMinutes = totalSeconds / 60;
+        long currentMinute = totalMinutes % 60;
+
+        //求出现在的小时
+        long totalHour = totalMinutes / 60;
+        long currentHour = totalHour % 24;
+
+        //显示时间
+        System.out.println("总毫秒为： " + totalMilliSeconds);
+        System.out.println(currentHour + ":" + currentMinute + ":" + currentSecond + " GMT");
     }
 }
+
+//while(!done) i+++;  --> if(!done) {while(true) i+++}

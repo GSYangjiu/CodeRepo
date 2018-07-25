@@ -1,16 +1,22 @@
 package thread;
 
+import java.util.List;
+
 /**
  * Created by Yang on 2017/10/10 0010.
  */
-public class MyThread extends Thread{
-    private int i;
-    public MyThread(int i){
+public class MyThread extends Thread {
+    private List<Integer> list;
+
+    public MyThread(List<Integer> list) {
         super();
-        this.i = i;
+        this.list = list;
     }
+
     @Override
-    public void run(){
-        System.out.println(i);
+    public void run() {
+        for (int i : list) {
+            System.out.println(i);
+        }
     }
 }
