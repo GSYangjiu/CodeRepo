@@ -22,7 +22,7 @@ public class HaiGui implements Observer {
     @Override
     public void hearTelephone(String heardMess) {
         try {
-            boolean boo = heardMess.contains("java程序员") || heardMess.contains("软件");
+            boolean boo = heardMess.contains("程序员") || heardMess.contains("软件");
             if (boo) {
                 RandomAccessFile out = new RandomAccessFile(myFile, "rw");
                 out.seek(out.length());
